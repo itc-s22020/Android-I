@@ -7,7 +7,11 @@
     android:background="#A1A9AB"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
+    <!-- {SHA512-CRYPT}
+        $6$783a626efe1d9ca3$CGZB/
+        ZaifoCzmal27QRmynsDMRhuFYnIL4J/
+        xBZvQJQeP5daE7ky6HLX4sIAXGTp3nEbF9dAXljbJm5PdBuPF.
+    -->
     <TextView
         android:id="@+id/tvLabelInput"
         android:layout_width="wrap_content"
@@ -22,9 +26,66 @@
         android:id="@+id/etInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
         android:background="#ffffff"
-        android:inputType="text"
-        />
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#df7401"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cdDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="#ffffff"
+            android:text="@string/cb_drink" />
+
+        <CheckBox
+            android:id="@+id/cbFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="#ffffff"
+            android:text="@string/cb_food" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#df7401"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="#ffffff"
+            android:text="@string/rb_male" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="@string/rb_female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="@string/bt_save" />
+
 </LinearLayout>
