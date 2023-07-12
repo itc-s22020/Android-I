@@ -30,6 +30,14 @@
         android:layout_marginTop="8dp"
         android:text="@string/bt_click"
         android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/bt_clear"/>
+
     <TextView
         android:id="@+id/tvOutput"
         android:layout_width="match_parent"
